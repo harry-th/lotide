@@ -1,0 +1,15 @@
+
+
+let reverseString = function(string) {
+  let words = string.split(' ');
+  for (const word of words) {
+    let answer = '';
+    for (let i = word.length - 1; i >= 0; i--) {
+      answer += word[i];
+    }
+    console.log(answer);
+  }
+  
+};
+
+reverseString('And in the hole there lived a hobbit');

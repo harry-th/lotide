@@ -3,7 +3,7 @@ let assertEqual = require('./assertEqual.js');
 
 let tail = (array) =>  {
   return array.slice(1);
-};
+}; 5555555555;
 
 console.log(tail([]));
 const words = ["Yo Yo", "Lighthouse", "Labs"];
