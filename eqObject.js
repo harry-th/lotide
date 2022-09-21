@@ -1,11 +1,10 @@
-let assertEqual = require('./assertEqual');
+// let assertEqual = require('./assertEqual');
 let eqArrays = require('./eqArrays');
-const eqObjects = function(object1, object2) {
 
+const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
-  console.log(object1, object2);
   let condition = (variable) => {
     return typeof variable === 'object' && !Array.isArray(variable) && variable !== null;
   };
@@ -44,12 +43,12 @@ const eqObjects = function(object1, object2) {
 // const cd = { c: "1", d: ["2", 3] };
 // const dc = { d: ["2", 3], c: "1" };
 
-const dc1 = { d: {"2": 3}, c: "1" };
-const dc2 = { d: {"2": 3}, c: "1" };
-const dc3 = { d: {hello: 'neighbor',"2": 3}, c: "1", h:'1' };
+// const dc1 = { d: {"2": 3}, c: "1" };
+// const dc2 = { d: {"2": 3}, c: "1" };
+// const dc3 = { d: {hello: 'neighbor',"2": 3}, c: "1", h:'1' };
 
-assertEqual(eqObjects(dc1, dc2),true);
-assertEqual(eqObjects(dc1, dc3),false);
+// assertEqual(eqObjects(dc1, dc2),true);
+// assertEqual(eqObjects(dc1, dc3),false);
 
 
 // assertEqual(eqObjects(cd, dc),true); // => true
@@ -57,6 +56,8 @@ assertEqual(eqObjects(dc1, dc3),false);
 
 // const cd2 = { c: "1", d: ["2", 3, 4] };
 // assertEqual(eqObjects(cd, cd2), false); // => false
+
+module.exports = eqObjects;
 
 
 
