@@ -8,9 +8,9 @@ let countLetters = (word) => {
   }
   return answer;
 };
+module.exports = countLetters
+// console.log(countLetters('hello there'));
 
-console.log(countLetters('hello there'));
+// console.log(Object.values(countLetters('hello')).flat());
 
-console.log(Object.values(countLetters('hello')).flat());
-
-assertArraysEqual(Object.values(countLetters('helloh')).flat(),[0,5,1,2,3,4]);
+// assertArraysEqual(Object.values(countLetters('helloh')).flat(),[0,5,1,2,3,4]);

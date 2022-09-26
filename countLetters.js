@@ -8,10 +8,10 @@ let countLetters = (word) => {
   }
   return answer;
 };
+module.exports = countLetters;
+// console.log(countLetters('hello there'));
 
-console.log(countLetters('hello there'));
 
-
-assertEqual(countLetters('lhl').l,2);
-assertEqual(countLetters('lhl').h,1);
+// assertEqual(countLetters('lhl').l,2);
+// assertEqual(countLetters('lhl').h,1);
 

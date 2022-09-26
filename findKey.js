@@ -18,10 +18,12 @@ const generateKey = (argument) => {
   }, argument);
 };
 
+module.exports = findKey
 
 
 
-assertEqual(generateKey(x => x.stars === 2), 'noma');
-assertEqual(generateKey(x => x.stars === 1), 'Blue Hill');
-assertEqual(generateKey(x => x.stars === 3), 'Akaleri');
-assertEqual(generateKey(x => x.stars === 'hello'), 'Akelarre');
+
+// assertEqual(generateKey(x => x.stars === 2), 'noma');
+// assertEqual(generateKey(x => x.stars === 1), 'Blue Hill');
+// assertEqual(generateKey(x => x.stars === 3), 'Akaleri');
+// assertEqual(generateKey(x => x.stars === 'hello'), 'Akelarre');
