@@ -9,13 +9,5 @@ let middle = (array) => {
   }
 };
 
-
-assertArraysEqual(middle([1,2,3,4,5]), [3]);
-assertArraysEqual(middle([1,2,3,4,5,6,7,8]),[4,5]);
-assertArraysEqual(middle([1,2,3,4,5,6,7]),[4]);
-
-
-console.log(middle([1,2,3,4,5]));
-console.log(middle([1,2,3,4,5,6,7,8]));
-console.log(middle([1,2,3,4,5,6,7]));
+module.exports = middle
 
