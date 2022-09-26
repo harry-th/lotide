@@ -15,3 +15,12 @@ let array2 = [1, 2, 3, [1, 2, 3, [1, 2, 3, [1, 2, 3]]], 1, 2, 3];
 
 
 console.log({ test1: flatten(array), test2: flatten(array2) });
+
+// let flatten = (array) => {
+//   while (array.some((item) => {
+//     return Array.isArray(item);
+//   })) {
+//     array = [].concat(...array);
+//   }
+//   return array;
+// };
