@@ -1,4 +1,3 @@
-let assertArraysEqual = require('./assertArraysEqual');
 
 let countLetters = (word) => {
   let answer = {};

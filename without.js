@@ -1,5 +1,4 @@
 let assertArraysEqual = require('./assertArraysEqual.js');
-console.log(assertArraysEqual);
 let without = function(array, conditions) {
   let answer = [];
   let isItInThere = function(item) {
