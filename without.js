@@ -1,4 +1,4 @@
-let assertArraysEqual = require('./assertArraysEqual.js');
+// let assertArraysEqual = require('./assertArraysEqual.js');
 let without = function(array, conditions) {
   let answer = [];
   let isItInThere = function(item) {
@@ -16,7 +16,7 @@ let without = function(array, conditions) {
   }
   return answer;
 };
-module.exports = without
+module.exports = without;
 
 // console.log(without([1, 2, 3], [1]));
 // console.log(without(["1", "2", "3"], [1, 2, "3"]));

@@ -7,7 +7,7 @@ let countLetters = (word) => {
   }
   return answer;
 };
-module.exports = countLetters
+module.exports = countLetters;
 // console.log(countLetters('hello there'));
 
 // console.log(Object.values(countLetters('hello')).flat());

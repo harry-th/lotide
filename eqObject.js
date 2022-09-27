@@ -1,4 +1,4 @@
-// let assertEqual = require('./assertEqual');
+let assertEqual = require('./assertEqual');
 let eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
@@ -30,7 +30,7 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-module.exports = eqObjects
+module.exports = eqObjects;
 
 // const ab = { a: "1", b: "2" };
 // const ba = { b: "2", a: "1" };
@@ -61,4 +61,6 @@ module.exports = eqObjects
 module.exports = eqObjects;
 
 
-
+assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true);
+assertEqual(eqObjects({ a: { z: {r:{y:'n'}} }, b: 2 }, { a: { z: {r:{y:'n'}} }, b: 2 }), true);
+assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false);

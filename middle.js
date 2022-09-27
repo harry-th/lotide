@@ -6,5 +6,5 @@ let middle = (array) => {
   }
 };
 
-module.exports = middle
+module.exports = middle;
 

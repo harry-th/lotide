@@ -6,18 +6,18 @@ const findKey = (object, callback) => {
   return false;
 };
 
-const generateKey = (argument) => {
-  return findKey({
-    "Blue Hill": { stars: 1 },
-    "Akaleri":   { stars: 3 },
-    "noma":      { stars: 2 },
-    "elBulli":   { stars: 3 },
-    "Ora":       { stars: 2 },
-    "Akelarre":  { stars: 'hello' }
-  }, argument);
-};
+// const generateKey = (argument) => {
+//   return findKey({
+//     "Blue Hill": { stars: 1 },
+//     "Akaleri":   { stars: 3 },
+//     "noma":      { stars: 2 },
+//     "elBulli":   { stars: 3 },
+//     "Ora":       { stars: 2 },
+//     "Akelarre":  { stars: 'hello' }
+//   }, argument);
+// };
 
-module.exports = findKey
+module.exports = findKey;
 
 
 
