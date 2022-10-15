@@ -1,4 +1,3 @@
-let assertEqual = require('./assertEqual');
 let eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
@@ -8,7 +7,7 @@ const eqObjects = function(object1, object2) {
   let condition = (variable) => {
     return typeof variable === 'object' && !Array.isArray(variable) && variable !== null;
   };
-
+  
   let checkEquality = function(object1, object2) {
     for (let item in object1) {
       let value1 = object1[item];
@@ -61,6 +60,6 @@ module.exports = eqObjects;
 module.exports = eqObjects;
 
 
-assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true);
-assertEqual(eqObjects({ a: { z: {r:{y:'n'}} }, b: 2 }, { a: { z: {r:{y:'n'}} }, b: 2 }), true);
-assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false);
+// assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true);
+// assertEqual(eqObjects({ a: { z: {r:{y:'n'}} }, b: 2 }, { a: { z: {r:{y:'n'}} }, b: 2 }), true);
+// assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false);
